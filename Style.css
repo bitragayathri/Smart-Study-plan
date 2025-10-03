@@ -1,0 +1,111 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(135deg, #101827 0%, #1b2a4a 25%, #314e8a 60%, #8ec5ff 100%);
+    overflow: auto;
+    color: #f4f8fb;
+}
+
+#particles-js {
+    position: fixed;
+    top:0; left:0; right:0; bottom:0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.page-wrap {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    backdrop-filter: blur(8px);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.logo-plate {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 22px;
+    color:#fff;
+}
+
+h1 { margin: 0; font-size: 26px; }
+.typed-sub { font-size: 14px; color:#d7e8ff; margin-top: 4px; }
+p.desc { margin: 14px 0 20px; font-size: 15px; color:#eaf4ff; }
+
+form {
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:18px;
+}
+
+input, button {
+    padding:10px;
+    border-radius:8px;
+    border:none;
+    font-size:14px;
+}
+
+input[type="text"], input[type="time"], input[type="date"] {
+    flex:1 1 150px;
+    background:rgba(255,255,255,0.1);
+    color:#fff;
+    border:1px solid rgba(255,255,255,0.2);
+}
+input::placeholder { color:#ddd; }
+
+button {
+    background:linear-gradient(180deg,#2b59b2,#123a7f);
+    color:#fff;
+    font-weight:600;
+    cursor:pointer;
+}
+
+#taskList {
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+#taskList li {
+    background: rgba(255,255,255,0.1);
+    padding: 10px 14px;
+    border-radius: 10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+.timeline { font-size:13px; color:#ddd; }
+.remove { cursor:pointer; color:#ccc; font-size:20px; }
+.remove:hover { color:#fff; }
